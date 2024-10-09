@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones de JavaScript</title>
+    <link rel="stylesheet" href="estilosdejs.css"> 
+</head>
+<body>
+    <h1>Funciones de JavaScript</h1>
+
+    <!-- Función esBisiesto -->
+    <div class="function">
+        <h2>1. esBisiesto</h2>
+        <input type="number" id="año" placeholder="Ingresa un año">
+        <button onclick="mostrarResultado('esBisiesto', document.getElementById('año').value)">Verificar</button>
+        <div class="result" id="resultado-esBisiesto"></div>
+    </div>
+
+    <!-- Función celsiusAFahrenheit -->
+    <div class="function">
+        <h2>2. celsiusAFahrenheit</h2>
+        <input type="number" id="celsius" placeholder="Ingresa grados Celsius">
+        <button onclick="mostrarResultado('celsiusAFahrenheit', document.getElementById('celsius').value)">Convertir</button>
+        <div class="result" id="resultado-celsiusAFahrenheit"></div>
+    </div>
+
+    <!-- Función mayorDeDos -->
+    <div class="function">
+        <h2>3. mayorDeDos</h2>
+        <input type="number" id="num1" placeholder="Ingresa el primer número">
+        <input type="number" id="num2" placeholder="Ingresa el segundo número">
+        <button onclick="mostrarResultado('mayorDeDos', document.getElementById('num1').value, document.getElementById('num2').value)">Ver Mayor</button>
+        <div class="result" id="resultado-mayorDeDos"></div>
+    </div>
+
+    <!-- Función convertirMinutos -->
+    <div class="function">
+        <h2>4. convertirMinutos</h2>
+        <input type="number" id="minutos" placeholder="Ingresa minutos">
+        <button onclick="mostrarResultado('convertirMinutos', document.getElementById('minutos').value)">Convertir</button>
+        <div class="result" id="resultado-convertirMinutos"></div>
+    </div>
+
+    <!-- Función estaEnRango -->
+    <div class="function">
+        <h2>5. estaEnRango</h2>
+        <input type="number" id="numero" placeholder="Ingresa un número">
+        <input type="number" id="inicio" placeholder="Inicio del rango">
+        <input type="number" id="fin" placeholder="Fin del rango">
+        <button onclick="mostrarResultado('estaEnRango', document.getElementById('numero').value, document.getElementById('inicio').value, document.getElementById('fin').value)">Verificar Rango</button>
+        <div class="result" id="resultado-estaEnRango"></div>
+    </div>
+
+    <!-- Función calcularPrecioFinal -->
+    <div class="function">
+        <h2>6. calcularPrecioFinal</h2>
+        <input type="number" id="precioInicial" placeholder="Ingresa precio inicial">
+        <input type="number" id="descuento" placeholder="Ingresa descuento">
+        <button onclick="mostrarResultado('calcularPrecioFinal', document.getElementById('precioInicial').value, document.getElementById('descuento').value)">Calcular Precio Final</button>
+        <div class="result" id="resultado-calcularPrecioFinal"></div>
+    </div>
+
+    <script src="Actividad4_Diplomado.js"></script>
+</body>
+</html>
